@@ -22,22 +22,28 @@
           display: grid;
           grid-template-rows: 100px 50px;
           grid-template-columns: 150px 1fr;
+          grid-template-areas:
+          "areaA areaA"
+          "areaB areaC";
       }
 
       /* アイテム */
       #itemA {
-          grid-row: 1 / 3;
-          grid-column: 1 / 2;
+          /* grid-row: 1 / 3;
+          grid-column: 1 / 2; */
+          grid-area: areaA;
           background: #f88;
       }
       #itemB {
-          grid-row: 1 / 2;
-          grid-column: 2 / 3;
+          /* grid-row: 1 / 2;
+          grid-column: 2 / 3; */
+          grid-area: areaB;
           background: #8f8;
       }
       #itemC {
-          grid-row: 2 / 3;
-          grid-column: 2 / 3;
+          /* grid-row: 2 / 3;
+          grid-column: 2 / 3; */
+          grid-area: areaC;
           background: #88f;
       }
     </style>
